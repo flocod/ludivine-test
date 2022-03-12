@@ -1,0 +1,94 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST LUDIVINE</title>
+    <meta name="description" content="Site test LUDIVINE" />
+
+    <meta
+      name="thumbnail"
+      content="images/preview.png"
+    />
+    <meta property="og:site_name" content="LUDIVINE" />
+    <meta property="og:title" content="  LUDIVINE" />
+    <meta property="og:type" content="LUDIVINE" />
+    <meta property="og:description" content=" Site test LUDIVINE" />
+
+    <meta
+      property="og:image"
+      content="images/img1.jpeg"
+    />
+
+
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div class="container">
+    <div class="left">
+        <!-- <div class="image">
+            <img class="image_val" src="images/img5.jpeg" alt="">
+        </div> -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="image_val" src="images/img1.jpeg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="image_val" src="images/img2.jpeg" alt="">
+              </div>
+              <div class="swiper-slide"><img class="image_val" src="images/img3.jpeg" alt=""></div>
+              <div class="swiper-slide"><img class="image_val" src="images/img4.jpeg" alt=""></div>
+              <div class="swiper-slide"><img class="image_val" src="images/img5.jpeg" alt=""></div>
+            
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    </div>
+    <div class="right">
+        <div class="struct">
+            <a  href="tel:697511286" class="tel">Tel:697 511 286</a>
+            <div class="text1">
+                Bonjour, je suis
+            </div>
+            <div class="text2">Ludivine</div>
+            <div class="text3">here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of</div>
+            <a class="bnt" href="tel:697511286">
+                Contactez-moi
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    speed: 400,
+  spaceBetween: 0,
+  loop:true,
+  });
+
+
+  setInterval(function(){
+    swiper.slideNext();
+  },1300)
+
+</script>
+</body>
+</html>
